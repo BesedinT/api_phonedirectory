@@ -1,6 +1,6 @@
 # API_PHONEDIRECTORY
 
-Телефоный справочник (API сервис)
+Телефонный справочник (API сервис)
 
 ## Основные функции:
 
@@ -36,7 +36,7 @@ pip install -r requirements.txt
 ```
 python manage.py migrate
 ```
-Cоздайте суперпользователя:
+Создайте суперпользователя:
 ```
 python manage.py createsuperuser
 ```
@@ -65,8 +65,8 @@ GET http://127.0.0.1:8000/api/contacts/
         "first_name": "string",
         "patronymic": "string",
         "company": "string",
-        "work_phone": "PhoneNumberField",
-        "personal_phone": "PhoneNumberField"
+        "work_phone": "phone number",
+        "personal_phone": "phone number"
         }
       }
     ]
@@ -82,8 +82,8 @@ POST http://127.0.0.1:8000/api/contacts/
   "first_name": "string",
   "patronymic": "string",
   "company": "string",
-  "work_phone": "PhoneNumberField",
-  "personal_phone": "PhoneNumberField"
+  "work_phone": "phone number",
+  "personal_phone": "phone number"
 }
 ```
 *Ответ 201 CREATED:* 
@@ -100,7 +100,7 @@ GET http://127.0.0.1:8000/api/contacts/{id}
     "first_name": ""string",
     "patronymic": "string",
     "company": "string",
-    "work_phone": "PhoneNumberField",
-    "personal_phone": "PhoneNumberField"
+    "work_phone": "phone number",
+    "personal_phone": "phone number"
 }
 ```
