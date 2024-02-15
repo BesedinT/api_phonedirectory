@@ -1,4 +1,3 @@
-from django.core.exceptions import ValidationError
 from django.db import models
 from phonenumber_field.modelfields import PhoneNumberField
 
@@ -26,12 +25,10 @@ class Person(models.Model):
     )
     work_phone = PhoneNumberField(
         'Рабочий телефон',
-        null=False,
         blank=False,
     )
     personal_phone = PhoneNumberField(
         'Личный телефон',
-        null=True,
         blank=True,
     )
 
